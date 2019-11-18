@@ -16,17 +16,35 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bootstrap', function () {
-    return view('index');
+Route::get('/index', function () {
+    $advertisement = DB::table('advertisement')->get();
+    //dd($advertisement);
+    return view('index', ['advertisement' => $advertisement]);
 });
 
 Route::get('/faq', function () {
     return view('faq');
+
+})->name('faq');
+
+Route::get('/advadd', function () {
+    return view('advadd');
 });
 
 Route::get('/contact_us', function () {
     return view('contact_us');
-});
+})->name('contact_us');
+
+Route::get('/ad', function () {
+    $advertisement = DB::table('advertisement')->get();
+
+    return view('ad', ['advertisement' => $advertisement]);
+})->name('ad');
+
+Route::post('/ad','AdvertisementController@store');
+
+
+
 
 Auth::routes();
 
