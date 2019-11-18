@@ -44,7 +44,13 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+<<<<<<< Updated upstream
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">Profil</a>
+                        </li>
+=======
 
+>>>>>>> Stashed changes
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ad') }}">Hirdetések</a>
                         </li>
@@ -73,6 +79,20 @@
                            
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             
+<<<<<<< Updated upstream
+                        
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Kijelentkezés') }}
+                                </a>
+                                
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                                
+                                
+
+=======
                          
 
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -86,6 +106,7 @@
                                 
                                 
 
+>>>>>>> Stashed changes
                             </div>
 
                             

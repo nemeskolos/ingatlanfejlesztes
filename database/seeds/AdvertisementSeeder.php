@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Psy\Util\Str;
 
 class AdvertisementSeeder extends Seeder
 {
@@ -12,11 +13,12 @@ class AdvertisementSeeder extends Seeder
     public function run()
     {
         DB::table('advertisement')->insert([
-            'price' => '1500000',
-            'rooms' => '3',
-            'city' => Str::random(10),
-            'county' => Str::random(3),
-            'user_id' => '1',
+            'id' => 'insertadvdata/$id',
+            'price' => 'insertadvdata/$price',
+            'rooms' => 'insertadvdata/$rooms',
+            'city' => 'insertadvdata/$city',
+            'county' => 'insertadvdata/$county',
+            'user_id' => 'insertadvdata/$user_id',
         ]);
     }
 }

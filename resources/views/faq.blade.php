@@ -44,10 +44,11 @@
       <li>Hogyan adhatok fel hírdetést?</li>
       <ul>
         <li>Regisztráció</li>
+        <li>Belépés</li>
         <li>Hirdetés feladás</li>
       </ul>
       </li>
-      <li>Hogyan léphetek kapcsolatba a hirdetővel?</li>
+      
     </ul>
 
     <!--  Gyakran ismetelt kerd vege-->
