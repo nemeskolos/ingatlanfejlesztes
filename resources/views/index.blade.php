@@ -31,7 +31,6 @@
     <div class="row">
 
     </div>
-<<<<<<< Updated upstream
     <div class="jumbotron text-center" style="margin-bottom:0">
       <p class="post-info">2019 © SZTE <br>
         Info-Bionika || Rendszerfejlesztés
@@ -43,11 +42,3 @@
 
 
    
-=======
-
-    @endsection
-
-    @extends('layout')
-    @section('menu')
-    @endsection
->>>>>>> Stashed changes

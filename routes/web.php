@@ -28,49 +28,30 @@ Route::get('/faq', function () {
 })->name('faq');
 
 Route::get('/advadd', function () {
-    return view('advadd');
-<<<<<<< Updated upstream
+    $advertisement = DB::table('advertisement')->get();
+    //dd($advertisement);
+    return view('advadd', ['advertisement' => $advertisement]);
+   
 })->name('advadd');
-
-Route::get('/advedit', function () {
-    return view('advedit');
-})->name('advedit');
-=======
-});
->>>>>>> Stashed changes
 
 Route::get('/contact_us', function () {
     return view('contact_us');
 })->name('contact_us');
 
-<<<<<<< Updated upstream
-Route::get('/insertadddata', function () {
-    return view('insertadvdata');
-})->name('insertadvdata');
-
-=======
->>>>>>> Stashed changes
 Route::get('/ad', function () {
     $advertisement = DB::table('advertisement')->get();
-
+    //dd($advertisement);
     return view('ad', ['advertisement' => $advertisement]);
 })->name('ad');
 
-<<<<<<< Updated upstream
 
 
 Route::post('/ad','AdvertisementController@store');
-Route::post('/advadd','AdvertisementController@store');
-Route::post('/insertadvdata','AdvertisementController@store');
+
 
 Route::get('/home', function () {
     return view('home');
 })->name('home');
-=======
-Route::post('/ad','AdvertisementController@store');
-
-
->>>>>>> Stashed changes
 
 
 Auth::routes();

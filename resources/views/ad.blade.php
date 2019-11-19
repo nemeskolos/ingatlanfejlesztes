@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 <link rel="stylesheet" type="text/css" href="/style/style.css">
@@ -25,13 +26,26 @@
   <div class="row">
 
 
-
-
     @foreach ($advertisement as $advertisementValue)
     <div class="col">
 
       <div class="card" style="width: 18rem;">
+        @if ($advertisementValue->rooms == 2)
         <img src="http://127.0.0.1:8000/asd.jpeg" class="card-img-top" alt="...">
+        @elseif(($advertisementValue->rooms == 3))
+        <img src="http://127.0.0.1:8000/asd3.jpg" class="card-img-top" alt="...">
+        @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price >= 10000000))
+        <img src="http://127.0.0.1:8000/ads1.jpeg" class="card-img-top" alt="...">
+        @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price < 10000000))
+        <img src="http://127.0.0.1:8000/asdcheap1.jpeg" class="card-img-top" alt="...">
+        @else
+        <img src="http://127.0.0.1:8000/asdbig.jpg" class="card-img-top" alt="...">
+        @endif
+
+
+
+
+
         <div class="card-body">
           <h5 class="card-title">{{$advertisementValue->price}}</h5>
           <p class="card-text">{{$advertisementValue->city}}</p>

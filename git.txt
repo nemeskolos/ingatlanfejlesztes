@@ -1,7 +1,0 @@
-  726  git status
-  727  git stash
-  728  git pull
-  729  git stash apply
-  730  git add --all
-  731  git commit -am "11.18"
-  732  git push origin master 

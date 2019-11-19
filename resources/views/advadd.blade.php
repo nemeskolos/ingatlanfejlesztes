@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Hirdetés feladás') }}</div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('insertadvdata') }}">
+                    <form method="POST" action="{{ route('advadd') }}">
                         @csrf
                         <div class="form-group row">
                             <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Város') }}</label>
