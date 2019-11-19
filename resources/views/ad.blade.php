@@ -17,9 +17,11 @@
 <p></p>
 
 <div class="container">
-  <form class="form-inline my-2 my-lg-0" action="/ad" method="post">
+  <form class="form-inline my-2 my-lg-0" action="/ad" method="get">
     <input class="form-control mr-sm-2" type="search" placeholder="Város" aria-label="Search" name="city">
+    <span>
     <button class="btn btn-secondary btn-vs active" type="submit">Keresés</button>
+    </span>  
   </form>
 
   <p></p>
@@ -47,10 +49,11 @@
 
 
         <div class="card-body">
-          <h5 class="card-title">{{$advertisementValue->price}}</h5>
-          <p class="card-text">{{$advertisementValue->city}}</p>
-          <p class="card-text">{{$advertisementValue->county}}</p>
-          <p class="card-text">{{$advertisementValue->rooms}}</p>
+
+          <p class="card-text">Ár(HUF): {{$advertisementValue->price}}</p>
+          <p class="card-text">Város: {{$advertisementValue->city}}</p>
+          <p class="card-text">Megye: {{$advertisementValue->county}}</p>
+          <p class="card-text">Szobák száma: {{$advertisementValue->rooms}}</p>
         </div>
       </div>
     </div>

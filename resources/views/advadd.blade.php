@@ -16,7 +16,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('advadd') }}">
                         @csrf
-                        <div class="form-group row">
+                            <div class="form-group row">
                             <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Város') }}</label>
                             <div class="col-md-6">
                                 <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="city" autofocus>
