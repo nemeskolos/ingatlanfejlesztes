@@ -22,4 +22,11 @@ class AdvertisementController extends Controller
         $asd = DB::table('advertisement')->where('city', request('city'));
         return view('ad', ['advertisement' => $asd]);
     }
+
+    public function search(Request $request)
+    {
+        $citysearch = $request->get('search');
+        $post = DB::table('advertisement')->where ('city', 'like' , '%'.$citysearch.'%'); 
+        return view('ad', ['post'=> $post]);
+    }
 }

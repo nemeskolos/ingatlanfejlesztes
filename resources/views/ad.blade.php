@@ -18,10 +18,10 @@
 
 <div class="container">
   <form class="form-inline my-2 my-lg-0" action="/ad" method="get">
-    <input class="form-control mr-sm-2" type="search" placeholder="Város" aria-label="Search" name="city">
+    <input class="input-control mr-sm-2" type="search" placeholder="Város" aria-label="Search" name="city">
     <span>
-    <button class="btn btn-secondary btn-vs active" type="submit">Keresés</button>
-    </span>  
+      <button class="btn btn-secondary btn-vs active" type="submit">Keresés</button>
+    </span>
   </form>
 
   <p></p>
@@ -29,6 +29,7 @@
 
 
     @foreach ($advertisement as $advertisementValue)
+
     <div class="col">
 
       <div class="card" style="width: 18rem;">
@@ -38,23 +39,22 @@
         <img src="http://127.0.0.1:8000/asd3.jpg" class="card-img-top" alt="...">
         @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price >= 10000000))
         <img src="http://127.0.0.1:8000/ads1.jpeg" class="card-img-top" alt="...">
-        @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price < 10000000))
-        <img src="http://127.0.0.1:8000/asdcheap1.jpeg" class="card-img-top" alt="...">
-        @else
-        <img src="http://127.0.0.1:8000/asdbig.jpg" class="card-img-top" alt="...">
-        @endif
+        @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price < 10000000)) <img src="http://127.0.0.1:8000/asdcheap1.jpeg" class="card-img-top" alt="...">
+          @else
+          <img src="http://127.0.0.1:8000/asdbig.jpg" class="card-img-top" alt="...">
+          @endif
 
 
 
 
 
-        <div class="card-body">
+          <div class="card-body">
 
-          <p class="card-text">Ár(HUF): {{$advertisementValue->price}}</p>
-          <p class="card-text">Város: {{$advertisementValue->city}}</p>
-          <p class="card-text">Megye: {{$advertisementValue->county}}</p>
-          <p class="card-text">Szobák száma: {{$advertisementValue->rooms}}</p>
-        </div>
+            <p class="card-text">Ár(HUF): {{$advertisementValue->price}}</p>
+            <p class="card-text">Város: {{$advertisementValue->city}}</p>
+            <p class="card-text">Megye: {{$advertisementValue->county}}</p>
+            <p class="card-text">Szobák száma: {{$advertisementValue->rooms}}</p>
+          </div>
       </div>
     </div>
 
