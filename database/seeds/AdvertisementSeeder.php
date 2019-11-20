@@ -13,11 +13,11 @@ class AdvertisementSeeder extends Seeder
     public function run()
     {
         DB::table('advertisement')->insert([
-            'price' => '13400000',
-            'rooms' => '1',
-            'city' => 'Hegyeshalom',
+            'price' => '28500000',
+            'rooms' => '2',
+            'city' => 'Győrzámoly',
             'county' => 'GyMS',
-            'user_id' => '12',
+            'user_id' => '15',
         ]);
     }
 }
