@@ -16,18 +16,15 @@
 </div>
 
 <p></p>
+<form class="container" role="search" method="get" action="{{ url('/searchcontent') }}">
+  <div class="input-group">
+    <input type="text" class="form-controll" placeholder="Város" name="title">
+    <button class="btn btn-secondary btn-vs active" type="submit">Keresés
+    </button>
+    </input>
+  </div>
+</form>
 
-
-<div class="container">
-
-  <form action="/search" method="post">
-    
-    <input class="input-control mr-sm-2" type="search" placeholder="Város" aria-label="Search" name="citysearch">
-    <span>
-      <button class="btn btn-secondary btn-vs active" type="submit">Keresés</button>
-    </span>
-  </form>
-</div>
 
 <p></p>
 <div class="row">

@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Advertisement;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Product;
+use File;
 
 
 class AdvertisementController extends Controller
@@ -23,10 +26,10 @@ class AdvertisementController extends Controller
         return view('ad', ['advertisement' => $asd]);
     }
 
-    public function search(Request $request)
+    public function searchcontent()
     {
-        $citysearch = $request->get('search');
-        $post = DB::table('advertisement')->where ('city', 'like' , '%'.$citysearch.'%'); 
-        return view('ad', ['post'=> $post]);
+        $searchkey = \Request::get('title');
+        $posts = DB::table('advertisement')->where('city', 'like', '%' .$searchkey. '%')->paginate(5);
+        return view('searchcontent', ['advertisement'=> $posts]);
     }
 }

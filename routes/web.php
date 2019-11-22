@@ -18,29 +18,23 @@ Route::get('/', function () {
 
 Route::get('/index', function () {
     $advertisement = DB::table('advertisement')->get();
-    //dd($advertisement);
+    //dd($advertisement); 
+    //játszós
     return view('index', ['advertisement' => $advertisement]);
 });
 
 Route::get('/faq', function () {
     return view('faq');
-
 })->name('faq');
 
 Route::get('/advadd', function () {
-    $advertisement = DB::table('advertisement')->get();
-    //dd($advertisement);
-    return view('advadd', ['advertisement' => $advertisement]);
-   
+    return view('advadd');
 })->name('advadd');
 
 Route::get('/contact_us', function () {
     return view('contact_us');
 })->name('contact_us');
 
-Route::get('/search', function () {
-    return view('search');
-})->name('search');
 
 Route::get('/ad', function () {
     $advertisement = DB::table('advertisement')->get();
@@ -57,7 +51,16 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
+Route::get('/searchcontent', 'AdvertisementController@searchcontent');
 
+Route::get('/searchcontent', function () {
+    $searchkey = \Request::get('title');
+    $posts = DB::table('advertisement')->where('city', 'like', '%'.$searchkey.'%')->get();
+
+    
+    //dd($advertisement);
+    return view('ad', ['advertisement' => $posts]);
+})->name('searchcontent');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
