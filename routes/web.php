@@ -38,12 +38,16 @@ Route::get('/contact_us', function () {
     return view('contact_us');
 })->name('contact_us');
 
+Route::get('/search', function () {
+    return view('search');
+})->name('search');
+
 Route::get('/ad', function () {
     $advertisement = DB::table('advertisement')->get();
+    
     //dd($advertisement);
     return view('ad', ['advertisement' => $advertisement]);
 })->name('ad');
-
 
 
 Route::post('/ad','AdvertisementController@store');
