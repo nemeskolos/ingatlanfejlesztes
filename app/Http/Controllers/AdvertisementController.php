@@ -37,7 +37,7 @@ class AdvertisementController extends Controller
 
         DB::table('advertisement')->insert([$datas]);
 
-        return  view('sucadvmsg');
+        return  view('/sucadvmsg');
     
     }
 

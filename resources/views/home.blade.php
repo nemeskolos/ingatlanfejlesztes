@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Profil</title>
 @section('content')
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -21,7 +21,7 @@
 
                     Üdvözöljük!
                     <p></p>
-                    <a href="advadd" >Hirdetés feladás</a>
+                    <a href="advadd" class="text-white bg-dark" >Hirdetés feladás</a>
                 </div>
             </div>
         </div>

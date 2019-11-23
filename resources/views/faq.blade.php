@@ -43,9 +43,9 @@
       </ul>
       <li>Hogyan adhatok fel hírdetést?</li>
       <ul>
-        <li>Regisztráció</li>
-        <li>Belépés</li>
-        <li>Hirdetés feladás</li>
+        <li>1.Regisztráció</li>
+        <li>2.Belépés</li>
+        <li>3.Hirdetés feladás</li>
       </ul>
       </li>
       
