@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sucadvmsg', function () {
+    return view('sucadvmsg');
+})->name('sucadvmsg');
+
 Route::get('/index', function () {
     $advertisement = DB::table('advertisement')->get();
     //dd($advertisement); 
@@ -28,8 +32,11 @@ Route::get('/faq', function () {
 })->name('faq');
 
 Route::get('/advadd', function () {
+     
     return view('advadd');
 })->name('advadd');
+
+Route::post('/advadd', 'AdvertisementController@create');
 
 Route::get('/contact_us', function () {
     return view('contact_us');
