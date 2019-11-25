@@ -21,24 +21,22 @@ class AdvertisementController extends Controller
     public function insertform()
     {
         return view('index');
-    
-    } 
+    }
 
     public function create(Request $request)
     {
-        
+
         $price = $request->input('price');
         $rooms = $request->input('rooms');
         $city = $request->input('city');
         $county = $request->input('county');
-        $user_id= $request ->user()->id;
+        $user_id = $request->user()->id;
 
-        $datas = array('price' => $price, 'rooms' => $rooms, 'city' => $city, 'county' => $county, 'user_id'=> $user_id);
+        $datas = array('price' => $price, 'rooms' => $rooms, 'city' => $city, 'county' => $county, 'user_id' => $user_id);
 
         DB::table('advertisement')->insert([$datas]);
 
         return  view('/sucadvmsg');
-    
     }
 
     public function store(Request $request)
@@ -55,5 +53,17 @@ class AdvertisementController extends Controller
         $searchkey = \Request::get('title');
         $posts = DB::table('advertisement')->where('city', 'like', '%' . $searchkey . '%')->paginate(5);
         return view('searchcontent', ['advertisement' => $posts]);
+    }
+
+
+    public function store1(Request $request)
+    {
+
+
+        $asd1 = request('city');
+        dd($request);
+
+        $asd1 = DB::table('advertisement')->where('city', request('city'));
+        return view('advdel', ['advertisement' => $asd1]);
     }
 }

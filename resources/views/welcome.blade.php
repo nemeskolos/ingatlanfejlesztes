@@ -2,11 +2,14 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Ingatlan közvetítés</title>
 
+    <!-- Fonts -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -14,20 +17,51 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/style/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <style>
-        html,
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
             margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
         }
 
         .full-height {
@@ -45,7 +79,7 @@
         }
 
         .top-right {
-            position: absolute;
+            position: fixed;
             right: 10px;
             top: 18px;
         }
@@ -55,7 +89,7 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 40px;
         }
 
         .links>a {
@@ -71,43 +105,130 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+            {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
     </style>
+
 </head>
 
+
 <body>
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Home</a>
-            @else
-            <a href="{{ route('login') }}">Bejelentkezés</a>
 
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Regisztráció</a>
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+        <h1>Ingatlanközvetítés</h1>
+        <p>Eladás, bérlés, keresés, hirdetés <span>minden</span> egy helyen!</p>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            @if (Route::has('login'))
+            <div class="overlay-content">
+                @auth
+                <a href="{{ url('/') }}">Kezdőlap</a>
+                <a href="{{ url('/home') }}">Profil</a>
+                <a href="{{ url('/ad') }}">Hirdetések</a>
+                <a href="{{ url('/faq') }}">GYIK</a>
+                <a href="{{ url('/contact_us') }}">Kapcsolat</a>
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                    {{ __('Kijelentkezés') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+
+                @else
+
+                <a href="{{ route('login') }}">Bejelentkezés</a>
+                @if (Route::has('register'))
+                <a href="{{ route('register') }}">Regisztráció</a>
+                <a href="{{ url('/') }}">Kezdőlap</a>
+                <a href="{{ url('/ad') }}">Hirdetések</a>
+                <a href="{{ url('/faq') }}">GYIK</a>
+                <a href="{{ url('/contact_us') }}">Kapcsolat</a>
+                @endif
+                @endauth
+            </div>
             @endif
-            @endauth
-        </div>
-        @endif
-
-        <div class="jumbotron text-center img" style="margin-bottom:0">
-
-            <h1>Ingatlan közvetítő</h1>
-            <p>Eladás, bérlés, keresés, hirdetés <span>minden</span> egy helyen!</p>
-            <a href="/ad" class="badge badge-light">Hirdetések</a>
-            <a href="/faq" class="badge badge-light">GYIK</a>
-            <a href="/contact_us" class="badge badge-light">Kapcsolat</a>
-        </div>
         </div>
 
-       
-    </div>
-    </div>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-      <p class="post-info">2019 © SZTE <br>
-        Info-Bionika || Rendszerfejlesztés
-      </p>
-    </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+
+
 </body>
 
 </html>

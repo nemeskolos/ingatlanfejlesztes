@@ -53,10 +53,21 @@ Route::get('/ad', function () {
 
 Route::post('/ad','AdvertisementController@store');
 
+Route::get('/advdel', function () {
+    $advertisement = DB::table('advertisement')->get();
+    
+    //dd($advertisement);
+    return view('advdel', ['advertisement' => $advertisement]);
+})->name('advdel');
+Route::post('/advdel','AdvertisementController@store');
 
 Route::get('/home', function () {
     return view('home');
 })->name('home');
+
+Route::get('/try', function () {
+    return view('try');
+})->name('try');
 
 Route::get('/searchcontent', 'AdvertisementController@searchcontent');
 
