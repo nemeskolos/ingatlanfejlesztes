@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
 
+
 class AdvertisementController extends Controller
 {
     /**
@@ -69,9 +70,17 @@ class AdvertisementController extends Controller
     public function delete($id)
     {
 
-        DB::table('advertisement')->where('id',$id)->delete(); 
-        return view('sucdelmsg');  
-
+        DB::table('advertisement')->where('id', $id)->delete();
+        return view('sucdelmsg');
     }
 
+    public function edit($id)
+    {
+
+        $advertisement = Advertisement::find($id);
+        return view('edit', compact('$advertisement', 'id'));
+    }
+
+    public function update(Request $request)
+    { }
 }

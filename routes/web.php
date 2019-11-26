@@ -64,6 +64,8 @@ Route::get('/delete', function () {
     return view('delete');
 })->name('delete');
 
+
+
 Route::get('/home', function () {
     return view('home');
 })->name('home');

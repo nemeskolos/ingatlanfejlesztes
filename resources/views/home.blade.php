@@ -211,7 +211,7 @@
                     <p></p>
                     <a href="advadd" class="text-white bg-dark" >Hirdetés feladás</a>
                     <p></p>
-                    <a href="advdel" class="text-white bg-dark" >Hirdetések kezelése</a>
+                    <a href="advdel" class="text-white bg-dark" >Hirdetések törlés</a>
                 </div>
             </div>
         </div>
