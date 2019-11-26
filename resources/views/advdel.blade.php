@@ -168,16 +168,16 @@
 
             <div class="card" style="width: 18rem; ">
                 @if (($advertisementValue->rooms == 2 && $advertisementValue->price >= 12500000))
-                <img src="http://127.0.0.1:8000/asd.jpeg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
+                <img src="http://hirdetes2019.tk/asd.jpeg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                 @elseif(($advertisementValue->rooms == 2 && $advertisementValue->price < 12500000)) <img src="http://127.0.0.1:8000/asd2cheap.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                     @elseif(($advertisementValue->rooms == 3 && $advertisementValue->price >= 15000000))
-                    <img src="http://127.0.0.1:8000/asd3.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
+                    <img src="http://hirdetes2019.tk/asd3.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                     @elseif(($advertisementValue->rooms == 3 && $advertisementValue->price < 15000000)) <img src="http://127.0.0.1:8000/asd3cheap.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                         @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price >= 10000000))
-                        <img src="http://127.0.0.1:8000/ads1.jpeg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
+                        <img src="http://hirdetes2019.tk/ads1.jpeg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                         @elseif(($advertisementValue->rooms == 1 && $advertisementValue->price < 10000000)) <img src="http://127.0.0.1:8000/asdcheap1.jpeg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                             @else
-                            <img src="http://127.0.0.1:8000/asdbig.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
+                            <img src="http://hirdetes2019.tk/asdbig.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
                             @endif
 
 
