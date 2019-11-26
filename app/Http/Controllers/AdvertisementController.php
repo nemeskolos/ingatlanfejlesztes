@@ -36,7 +36,7 @@ class AdvertisementController extends Controller
 
         DB::table('advertisement')->insert([$datas]);
 
-        return  view('/sucadvmsg');
+        return  view('delete');
     }
 
     public function store(Request $request)
@@ -59,11 +59,19 @@ class AdvertisementController extends Controller
     public function store1(Request $request)
     {
 
-
         $asd1 = request('city');
         dd($request);
 
         $asd1 = DB::table('advertisement')->where('city', request('city'));
         return view('advdel', ['advertisement' => $asd1]);
     }
+
+    public function delete($id)
+    {
+
+        DB::table('advertisement')->where('id',$id)->delete(); 
+        return view('sucdelmsg');  
+
+    }
+
 }
