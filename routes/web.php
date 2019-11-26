@@ -70,6 +70,11 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
+Route::get('/easteregg', function () {
+    return view('easteregg');
+})->name('easteregg');
+
+
 Route::get('/try', function () {
     return view('try');
 })->name('try');
