@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Easter egg</title>
+  <title>Easter egg🚙</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <style>
@@ -19,7 +19,7 @@
 
     body {
       align-items: center;
-      background: linear-gradient(180deg, #1a1c23, #111317 50%, #1a1a1a 50%), #1a1a1a;
+      background: linear-gradient(180deg, #78ffec, #ffe700 50%, #3c3c3c 50%), #1a1a1a;
       display: flex;
       justify-content: center;
       min-height: 100vh;
@@ -38,16 +38,16 @@
     }
 
     .title {
-      display: none;
+      display:inline;
       --color: #b3b3b3;
       --speed: 0.1;
       text-transform: uppercase;
       color: var(--color);
       text-shadow: 0 0 20px var(--color);
-      font-size: 25vh;
+      font-size: 12vh;
       font-family: 'Wallpoet', cursive;
       position: absolute;
-      bottom: 42%;
+      bottom: 0%;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
@@ -98,13 +98,205 @@
     }
 
     .mountain {
-      height: calc(var(--height) * 1vh);
-      width: calc(var(--width) * 1vw);
+      height: 100%;
+      width: 100%;
       position: absolute;
-      bottom: 50%;
-      background: hsl(35, 0%, calc(var(--lightness) * 1%));
+      background-position: bottom;
+      bottom: 49%;
+      background-image: url('uni.png');
+      background-repeat: no-repeat;
       left: 50%;
-      -webkit-animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain1 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('dome.png');
+      background-repeat: no-repeat;
+      bottom: 49%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain2 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('wt.png');
+      background-repeat: no-repeat;
+      bottom: 49%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain3 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('tik.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain4 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('tram1.png');
+      background-repeat: no-repeat;
+      bottom: 49%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain5 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('troli.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain6 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('museum.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain7 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('theatre.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain8 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('statue.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain9 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('pick.png');
+      background-repeat: no-repeat;
+      bottom: 80%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+    .mountain10 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('pick.png');
+      background-repeat: no-repeat;
+      bottom: 70%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+    .mountain11 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('paprika.png');
+      background-repeat: no-repeat;
+      bottom: 75%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain12 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('paprika.png');
+      background-repeat: no-repeat;
+      bottom: 85%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain13 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('reok.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain14 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('townhall.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+    .mountain14 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('synagoge.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
+      animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
+    }
+
+
+    .mountain15 {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: bottom;
+      background-image: url('railwaystation.png');
+      background-repeat: no-repeat;
+      bottom: 48%;
+      left: 50%;
       animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
     }
 
@@ -505,16 +697,16 @@
     }
 
     .head {
-      
+
       position: absolute;
       top: 60%;
-      left: 52%;
+      left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       height: 110%;
       width: 50%;
-     
-      
+
+
     }
 
     .truck__window:before {
@@ -559,82 +751,106 @@
 </head>
 
 <body>
-  <div class="title"><span data-char="C" style="--index: 0;">C</span><span data-char="Y" style="--index: 1;">Y</span><span data-char="B" style="--index: 2;">B</span><span data-char="R" style="--index: 3;">R</span><span data-char="T" style="--index: 4;">T</span><span data-char="R" style="--index: 5;">R</span><span data-char="K" style="--index: 6;">K</span>
+  <div class="title">
+    <span data-char="I" style="--index: 0;">I</span>
+    <span data-char="N" style="--index: 1;">N</span>
+    <span data-char="F" style="--index: 2;">F</span>
+    <span data-char="O" style="--index: 3;">O</span>
+    <span data-char="-" style="--index: 4;">-</span>
+    <span data-char="B" style="--index: 3;">B</span>
+    <span data-char="I" style="--index: 2;">I</span>
+    <span data-char="O" style="--index: 1;">O</span>
+    <span data-char="N" style="--index: 2;">N</span>
+    <span data-char="I" style="--index: 3;">I</span>
+    <span data-char="K" style="--index: 4;">K</span>
+    <span data-char="A" style="--index: 43;">A</span>
+
   </div>
   <div class="backdrop">
-    <div class="mountain" style="--lightness: 5; --height: 29; --width: 18; --speed: 22; --distance: 156; --delay: 19;"></div>
-    <div class="mountain" style="--lightness: 6; --height: 15; --width: 29; --speed: 32; --distance: 154; --delay: 20;"></div>
-    <div class="mountain" style="--lightness: 8; --height: 37; --width: 20; --speed: 11; --distance: 195; --delay: 10;"></div>
-    <div class="mountain" style="--lightness: 2; --height: 25; --width: 33; --speed: 24; --distance: 194; --delay: 50;"></div>
-    <div class="mountain" style="--lightness: 8; --height: 20; --width: 20; --speed: 40; --distance: 168; --delay: 22;"></div>
-    <div class="mountain" style="--lightness: 8; --height: 40; --width: 28; --speed: 19; --distance: 177; --delay: 29;"></div>
-    <div class="mountain" style="--lightness: 4; --height: 19; --width: 22; --speed: 17; --distance: 163; --delay: 44;"></div>
-    <div class="mountain" style="--lightness: 7; --height: 27; --width: 15; --speed: 20; --distance: 170; --delay: 21;"></div>
-    <div class="mountain" style="--lightness: 7; --height: 16; --width: 15; --speed: 34; --distance: 172; --delay: 39;"></div>
-    <div class="mountain" style="--lightness: 2; --height: 43; --width: 14; --speed: 45; --distance: 153; --delay: 29;"></div>
+    <div class="mountain" style="--lightness: 5; --height: 32; --width: 30; --speed: 22; --distance: 120; --delay: 5;"></div>
+    <div class="mountain1" style="--lightness: 5; --height: 42; --width: 21; --speed: 18; --distance: 156; --delay: 6;"></div>
+    <div class="mountain2" style="--lightness: 5; --height: 42; --width: 21; --speed: 24; --distance: 126; --delay: 8;"></div>
+    <div class="mountain3" style="--lightness: 5; --height: 42; --width: 21; --speed: 25; --distance: 120; --delay: 11;"></div>
+    <div class="mountain4" style="--lightness: 5; --height: 42; --width: 21; --speed: 12; --distance: 120; --delay: 13;"></div>
+    <div class="mountain5" style="--lightness: 5; --height: 42; --width: 21; --speed: 13; --distance: 120; --delay: 11;"></div>
+    <div class="mountain6" style="--lightness: 5; --height: 42; --width: 21; --speed: 26; --distance: 120; --delay: 16;"></div>
+    <div class="mountain7" style="--lightness: 5; --height: 42; --width: 21; --speed: 21; --distance: 120; --delay: 22;"></div>
+    <div class="mountain8" style="--lightness: 5; --height: 42; --width: 21; --speed: 18; --distance: 120; --delay: 25;"></div>
+  <!--  <div class="mountain9" style="--lightness: 5; --height: 42; --width: 21; --speed: 9; --distance: 120; --delay: 10;"></div>
+    <div class="mountain10" style="--lightness: 5; --height: 42; --width: 21; --speed: 7; --distance: 120; --delay: 9;"></div>
+    <div class="mountain11" style="--lightness: 5; --height: 42; --width: 21; --speed: 7; --distance: 120; --delay: 20;"></div>
+    <div class="mountain12" style="--lightness: 5; --height: 42; --width: 21; --speed: 7; --distance: 120; --delay: 5;"></div>
+  -->
+  <div class="mountain13" style="--lightness: 5; --height: 42; --width: 21; --speed: 26; --distance: 120; --delay: 27;"></div>
+  <div class="mountain14" style="--lightness: 5; --height: 42; --width: 21; --speed: 27; --distance: 120; --delay: 23;"></div>
+  <div class="mountain15" style="--lightness: 5; --height: 42; --width: 21; --speed: 29; --distance: 120; --delay: 17;"></div>
+  <div class="mountain16" style="--lightness: 5; --height: 42; --width: 21; --speed:31; --distance: 120; --delay: 4;"></div>
+
+  
+
   </div>
   <div class="truck">
     <div class="truck__body">
       <div class="truck__body truck__body--top">
         <div class="truck__window">
           <div class="truck__window-glass">
-          
+
             ​<picture>
               <div class="head">
                 <source srcset="..." type="image">
-                <img src="http://hirdetes2019.tk/kolos.png" class="mh-100" style="width: 50px; height: 50px; alt="...">
+                <img src="kolos.png" class="mh-100" style="width: 50px; height: 50px;" alt="...">
+              </div>
             </picture>
           </div>
         </div>
       </div>
-    </div>
-    <div class="truck__body truck__body--mid">
-      <div class="truck__mid-body"></div>
-    </div>
-    <div class="truck__body truck__body--bottom">
-      <div class="truck__underpanel"></div>
-      <div class="truck__rear-bumper"></div>
-      <div class="truck__side-skirt"></div>
-    </div>
-  </div>
-  <div class="truck__wheel truck__wheel--front">
-    <div class="truck__wheel-arch"></div>
-    <div class="truck__wheel-arch-trim truck__wheel-arch-trim--top"></div>
-    <div class="truck__wheel-arch-trim truck__wheel-arch-trim--left"></div>
-    <div class="truck__wheel-arch-trim truck__wheel-arch-trim--right"></div>
-    <div class="truck-wheel">
-      <div class="truck-wheel__rim">
-        <div class="truck-wheel__spoke" style="--index: 0;"></div>
-        <div class="truck-wheel__spoke" style="--index: 1;"></div>
-        <div class="truck-wheel__spoke" style="--index: 2;"></div>
-        <div class="truck-wheel__spoke" style="--index: 3;"></div>
-        <div class="truck-wheel__spoke" style="--index: 4;"></div>
-        <div class="truck-wheel__spoke" style="--index: 5;"></div>
-        <div class="truck-wheel__spoke" style="--index: 6;"></div>
+      <div class="truck__body truck__body--mid">
+        <div class="truck__mid-body"></div>
+      </div>
+      <div class="truck__body truck__body--bottom">
+        <div class="truck__underpanel"></div>
+        <div class="truck__rear-bumper"></div>
+        <div class="truck__side-skirt"></div>
       </div>
     </div>
-  </div>
-  <div class="truck__wheel truck__wheel--rear">
-    <div class="truck__wheel-arch"></div>
-    <div class="truck__wheel-arch-trim truck__wheel-arch-trim--top"></div>
-    <div class="truck__wheel-arch-trim truck__wheel-arch-trim--left"></div>
-    <div class="truck__wheel-arch-trim truck__wheel-arch-trim--right"></div>
-    <div class="truck-wheel">
-      <div class="truck-wheel__rim">
-        <div class="truck-wheel__spoke" style="--index: 0;"></div>
-        <div class="truck-wheel__spoke" style="--index: 1;"></div>
-        <div class="truck-wheel__spoke" style="--index: 2;"></div>
-        <div class="truck-wheel__spoke" style="--index: 3;"></div>
-        <div class="truck-wheel__spoke" style="--index: 4;"></div>
-        <div class="truck-wheel__spoke" style="--index: 5;"></div>
-        <div class="truck-wheel__spoke" style="--index: 6;"></div>
+    <div class="truck__wheel truck__wheel--front">
+      <div class="truck__wheel-arch"></div>
+      <div class="truck__wheel-arch-trim truck__wheel-arch-trim--top"></div>
+      <div class="truck__wheel-arch-trim truck__wheel-arch-trim--left"></div>
+      <div class="truck__wheel-arch-trim truck__wheel-arch-trim--right"></div>
+      <div class="truck-wheel">
+        <div class="truck-wheel__rim">
+          <div class="truck-wheel__spoke" style="--index: 0;"></div>
+          <div class="truck-wheel__spoke" style="--index: 1;"></div>
+          <div class="truck-wheel__spoke" style="--index: 2;"></div>
+          <div class="truck-wheel__spoke" style="--index: 3;"></div>
+          <div class="truck-wheel__spoke" style="--index: 4;"></div>
+          <div class="truck-wheel__spoke" style="--index: 5;"></div>
+          <div class="truck-wheel__spoke" style="--index: 6;"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="truck__headlight"></div>
-  <div class="truck__taillight"></div>
-  <div class="truck__indicator"></div>
-  <div class="truck__foglight"></div>
+    <div class="truck__wheel truck__wheel--rear">
+      <div class="truck__wheel-arch"></div>
+      <div class="truck__wheel-arch-trim truck__wheel-arch-trim--top"></div>
+      <div class="truck__wheel-arch-trim truck__wheel-arch-trim--left"></div>
+      <div class="truck__wheel-arch-trim truck__wheel-arch-trim--right"></div>
+      <div class="truck-wheel">
+        <div class="truck-wheel__rim">
+          <div class="truck-wheel__spoke" style="--index: 0;"></div>
+          <div class="truck-wheel__spoke" style="--index: 1;"></div>
+          <div class="truck-wheel__spoke" style="--index: 2;"></div>
+          <div class="truck-wheel__spoke" style="--index: 3;"></div>
+          <div class="truck-wheel__spoke" style="--index: 4;"></div>
+          <div class="truck-wheel__spoke" style="--index: 5;"></div>
+          <div class="truck-wheel__spoke" style="--index: 6;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="truck__headlight"></div>
+    <div class="truck__taillight"></div>
+    <div class="truck__indicator"></div>
+    <div class="truck__foglight"></div>
   </div>
 </body>
 
