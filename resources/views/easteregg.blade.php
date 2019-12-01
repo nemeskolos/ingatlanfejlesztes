@@ -44,7 +44,7 @@
       text-transform: uppercase;
       color: var(--color);
       text-shadow: 0 0 20px var(--color);
-      font-size: 12vh;
+      font-size: 10vh;
       font-family: 'Wallpoet', cursive;
       position: absolute;
       bottom: 0%;
