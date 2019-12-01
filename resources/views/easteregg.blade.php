@@ -103,7 +103,7 @@
       position: absolute;
       background-position: bottom;
       bottom: 49%;
-      background-image: url('uni.png');
+      background-image: url('http://hirdetes2019.tk/uni.png');
       background-repeat: no-repeat;
       left: 50%;
       animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
@@ -114,7 +114,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('dome.png');
+      background-image: url('http://hirdetes2019.tk/dome.png');
       background-repeat: no-repeat;
       bottom: 49%;
       left: 50%;
@@ -126,7 +126,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('wt.png');
+      background-image: url('vwt.png');
       background-repeat: no-repeat;
       bottom: 49%;
       left: 50%;
@@ -138,7 +138,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('tik.png');
+      background-image: url('http://hirdetes2019.tk/tik.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -150,7 +150,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('tram1.png');
+      background-image: url('http://hirdetes2019.tk/tram1.png');
       background-repeat: no-repeat;
       bottom: 49%;
       left: 50%;
@@ -162,7 +162,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('troli.png');
+      background-image: url('http://hirdetes2019.tk/troli.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -174,7 +174,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('museum.png');
+      background-image: url('http://hirdetes2019.tk/museum.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -186,7 +186,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('theatre.png');
+      background-image: url('http://hirdetes2019.tk/theatre.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -198,7 +198,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('statue.png');
+      background-image: url('http://hirdetes2019.tk/statue.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -210,7 +210,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('pick.png');
+      background-image: url('http://hirdetes2019.tk/pick.png');
       background-repeat: no-repeat;
       bottom: 80%;
       left: 50%;
@@ -221,7 +221,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('pick.png');
+      background-image: url('http://hirdetes2019.tk/pick.png');
       background-repeat: no-repeat;
       bottom: 70%;
       left: 50%;
@@ -232,7 +232,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('paprika.png');
+      background-image: url('http://hirdetes2019.tk/paprika.png');
       background-repeat: no-repeat;
       bottom: 75%;
       left: 50%;
@@ -244,7 +244,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('paprika.png');
+      background-image: url('http://hirdetes2019.tk/paprika.png');
       background-repeat: no-repeat;
       bottom: 85%;
       left: 50%;
@@ -256,7 +256,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('reok.png');
+      background-image: url('http://hirdetes2019.tk/reok.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -268,7 +268,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('townhall.png');
+      background-image: url('http://hirdetes2019.tk/townhall.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -280,7 +280,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('synagoge.png');
+      background-image: url('http://hirdetes2019.tk/synagoge.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -293,7 +293,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('railwaystation.png');
+      background-image: url('http://hirdetes2019.tk/railwaystation.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -798,7 +798,7 @@
             ​<picture>
               <div class="head">
                 <source srcset="..." type="image">
-                <img src="kolos.png" class="mh-100" style="width: 50px; height: 50px;" alt="...">
+                <img src="http://hirdetes2019.tk/kolos.png" class="mh-100" style="width: 50px; height: 50px;" alt="...">
               </div>
             </picture>
           </div>
