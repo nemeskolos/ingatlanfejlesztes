@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <style>
@@ -41,12 +41,12 @@
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
-            padding: 20px;
+            
         }
 
         #myBtn {

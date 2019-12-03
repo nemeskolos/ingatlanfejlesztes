@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <title>Sikeres</title>
+
 <head>
 
 
@@ -41,11 +42,12 @@
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
+            height: 100%;
             padding: 20px;
         }
 
@@ -180,16 +182,16 @@
 
         <div class="jumbotron text-center img" style="margin-bottom:0">
 
-        <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Sikeres hirdetés feladás</h4>
-            <p>Köszönjük, hogy oldalunkat választottad ingatlan eladásod közvetítéséhez!<br>
-                Hirdetésedet rögzítettük. Munkatársaink ellenőrzik a feltöltött adatokat<br>
-                és jóváhagyás után megjelenik az oldalon.</p>
-            <hr>
-            <p class="mb-0">Ezt követően bármikor szerkesztheted a hirdetés adatait.</p>
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Sikeres hirdetés feladás</h4>
+                <p>Köszönjük, hogy oldalunkat választottad ingatlan eladásod közvetítéséhez!<br>
+                    Hirdetésedet rögzítettük. Munkatársaink ellenőrzik a feltöltött adatokat<br>
+                    és jóváhagyás után megjelenik az oldalon.</p>
+                <hr>
+
+            </div>
+            <a href="home" type="button" class="btn btn-dark btn-lg btn-block">Vissza a profilra</a>
         </div>
-        <a href="home" type="button" class="btn btn-dark btn-lg btn-block">Vissza a profilra</a>
-    </div>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             @if (Route::has('login'))

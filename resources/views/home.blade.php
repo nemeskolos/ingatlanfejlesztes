@@ -41,7 +41,7 @@
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
@@ -209,9 +209,9 @@
                 </div>
                     
                     <p></p>
-                    <a href="advadd" class="text-white bg-dark" >Hirdetés feladás</a>
+                    <a href="advadd" class="btn btn-dark" >Hirdetés feladás</a>
                     <p></p>
-                    <a href="advdel" class="text-white bg-dark" >Hirdetések törlés</a>
+                    <a href="advdel" class="btn btn-dark" >Hirdetések törlés</a>
                 </div>
             </div>
         </div>

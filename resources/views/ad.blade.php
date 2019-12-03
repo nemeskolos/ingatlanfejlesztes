@@ -174,7 +174,7 @@
 
     @foreach ($advertisement as $advertisementValue)
 
-    <div class="col">
+    <div class="col-2">
 
       <div class="card" style="width: 18rem; ">
         @if (($advertisementValue->rooms == 2 && $advertisementValue->price >= 12500000))
@@ -203,10 +203,10 @@
               </div>
       </div>
     </div>
-
     @endforeach
 
-  </div>
+
+
 
 
 
@@ -225,11 +225,10 @@
       <a href="{{ url('/ad') }}">Hirdetések</a>
       <a href="{{ url('/faq') }}">GYIK</a>
       <a href="{{ url('/contact_us') }}">Kapcsolat</a>
-      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-        {{ __('Kijelentkezés') }}
+      <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">Kijelentkezés
       </a>
-      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display;">
         @csrf
       </form>
 
@@ -264,7 +263,7 @@
 
 
       <form class="container:center" role="search" method="get" action="{{ url('/searchcontent') }}">
-        <div class="input-group">
+        <div class="input-group:center">
 
           <input type="text" class="form-controll" placeholder="Város" name="title">
           <button class="btn btn-secondary btn-vs active" type="submit">Keresés

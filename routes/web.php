@@ -20,6 +20,10 @@ Route::get('/sucadvmsg', function () {
     return view('sucadvmsg');
 })->name('sucadvmsg');
 
+Route::get('/sucdelmsg', function () {
+    return view('sucdelmsg');
+})->name('sucdelmsg');
+
 Route::get('/index', function () {
     $advertisement = DB::table('advertisement')->get();
     //dd($advertisement); 

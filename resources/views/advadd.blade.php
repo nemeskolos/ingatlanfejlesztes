@@ -41,7 +41,7 @@
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
@@ -180,49 +180,49 @@
 
         <div class="jumbotron text-center img" style="margin-bottom:0">
 
-        <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
 
-                <div class="card-header">{{ __('Hirdetés feladás') }}</div>
+                            <div class="card-header">{{ __('Hirdetés feladás') }}</div>
 
-                <div class="card-body">
+                            <div class="card-body">
 
 
-                    <form method="post" action="advadd" role="insert">
+                                <form method="post" action="advadd" role="insert">
 
-                        <div class="input-group">
+                                    <div class="input-group">
 
-                            <input type="text" class="form-controll offset-md-4" placeholder="Település" name="city" >
+                                        <input type="text" class="form-controll offset-md-4" placeholder="Település" name="city">
 
-                            <input type="text" class="form-controll offset-md-4" placeholder="Megye" name="county">
+                                        <input type="text" class="form-controll offset-md-4" placeholder="Megye" name="county">
 
-                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                            <input type="number" class="form-controll offset-md-4" placeholder="Ár(HUF)" name="price">
+                                        <input type="number" class="form-controll offset-md-4" placeholder="Ár(HUF)" name="price">
 
-                            <input type="number" class="form-controll offset-md-4" placeholder="Szobaszám" name="rooms">
+                                        <input type="number" class="form-controll offset-md-4" placeholder="Szobaszám" name="rooms">
+
+                                    </div>
+                                    <p></p>
+
+                                    <input type="submit" value="Mehet" class="btn btn-dark " name="submit" id="submit" />
+
+
+                                </form>
+                            </div>
+
 
                         </div>
-                        <p></p>
-                        
-                                <input type="submit" value="Mehet" class="btn btn-dark " name="submit" id="submit" />
 
-     
-                    </form>
+                    </div>
+
                 </div>
 
 
             </div>
-
         </div>
-
-    </div>
-
-
-        </div>
-
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             @if (Route::has('login'))
@@ -256,23 +256,22 @@
             @endif
         </div>
 
+        <div class="text-align: center">
 
-        <div class="content">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
-    <div class="text-align: center">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
 
-    </div>
-  </div>
 
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
 
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
-        </script>
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            </script>
+
+        </div>
 
     </div>
 </body>

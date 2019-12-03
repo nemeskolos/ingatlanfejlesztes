@@ -41,11 +41,12 @@
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
+            height: 100%;
             padding: 20px;
         }
 
@@ -174,7 +175,7 @@
         Your browser does not support HTML5 video.
     </video>
 
-    < <div class="content">
+    <div class="content">
         <h1>Ingatlanközvetítés</h1>
         <p>Eladás, bérlés, keresés, hirdetés <span>minden</span> egy helyen!</p>
 
@@ -185,7 +186,7 @@
                 <p>Köszönjük, hogy oldalunkat választottad ingatlan eladásod közvetítéséhez!<br>
                     Hirdetésedet töröltük!</br></p>
                 <hr>
-                <p class="mb-0">Ezt követően bármikor szerkesztheted a hirdetés adatait.</p>
+
             </div>
             <a href="/home" type="button" class="btn btn-dark btn-lg btn-block">Vissza a profilra</a>
         </div>
@@ -226,18 +227,18 @@
 
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
-        </script>
 
-        </div>
 </body>
 
 </html>

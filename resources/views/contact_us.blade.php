@@ -41,12 +41,12 @@
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
-            padding: 20px;
+            height: 100%;    
         }
 
         #myBtn {
@@ -181,107 +181,108 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="text-dark">Kapcsolat</h1>
-                <p class="text-dark">
-                    <div class="row">
+                <div class="text-dark">
+                    <div class="jumbotron jumbotron-center">
+                        <div class="row">
 
-                        <div class="column">
-                            <div class="card" style="width: 16rem; height: 13rem;">
-                                <div style="width:100%; text-align:center">
-                                    <img src="http://hirdetes2019.tk/contactus.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                            <div class="column">
+                                <div class="card" style="width: 16rem; height: 13rem;">
+                                    <div style="width:100%; text-align:center">
+                                        <img src="http://hirdetes2019.tk/contactus.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-dark">Ügyintéző</h5>
+                                        <p class="text-dark">Várady Tamás </p>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="text-dark">Ügyintéző</h5>
-                                    <p class="text-dark">Várady Tamás </p>
+                            </div>
+
+                            <div class="column">
+                                <div class="card" style="width: 16rem; height: 13rem;">
+                                    <div style="width:100%; text-align:center">
+                                        <img src="http://hirdetes2019.tk/contactphone.jpg " class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-dark">Telefon</h5>
+                                        <p class="text-dark">+3630/123-4567 </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card" style="width: 16rem; height: 13rem;">
+                                    <div style="width:100%; text-align:center">
+                                        <img src="http://hirdetes2019.tk/contactemail.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-dark">E-mail</h5>
+                                        <p class="text-dark">2019.info-bionika@rf.hu </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card" style="width: 16rem; height: 13rem;">
+                                    <div style="width:100%; text-align:center">
+                                        <img src="http://hirdetes2019.tk/contactskype.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-dark">Skype</h5>
+                                        <p class="text-dark">ingatlan_bionika </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="column">
-                            <div class="card" style="width: 16rem; height: 13rem;">
-                                <div style="width:100%; text-align:center">
-                                    <img src="http://hirdetes2019.tk/contactphone.jpg " class="card-img-top:center" alt="..." style="max-width: 8rem;">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="text-dark">Telefon</h5>
-                                    <p class="text-dark">+3630/123-4567 </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="card" style="width: 16rem; height: 13rem;">
-                                <div style="width:100%; text-align:center">
-                                    <img src="http://hirdetes2019.tk/contactemail.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="text-dark">E-mail</h5>
-                                    <p class="text-dark">2019.info-bionika@rf.hu </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="card" style="width: 16rem; height: 13rem;">
-                                <div style="width:100%; text-align:center">
-                                    <img src="http://hirdetes2019.tk/contactskype.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="text-dark">Skype</h5>
-                                    <p class="text-dark">ingatlan_bionika </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </p>
+                </div>
             </div>
         </div>
-
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            @if (Route::has('login'))
-            <div class="overlay-content">
-                @auth
-                <a href="{{ url('/') }}">Kezdőlap</a>
-                <a href="{{ url('/home') }}">Profil</a>
-                <a href="{{ url('/ad') }}">Hirdetések</a>
-                <a href="{{ url('/faq') }}">GYIK</a>
-                <a href="{{ url('/contact_us') }}">Kapcsolat</a>
-                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+   
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        @if (Route::has('login'))
+        <div class="overlay-content">
+            @auth
+            <a href="{{ url('/') }}">Kezdőlap</a>
+            <a href="{{ url('/home') }}">Profil</a>
+            <a href="{{ url('/ad') }}">Hirdetések</a>
+            <a href="{{ url('/faq') }}">GYIK</a>
+            <a href="{{ url('/contact_us') }}">Kapcsolat</a>
+            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
-                    {{ __('Kijelentkezés') }}
-                </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
+                {{ __('Kijelentkezés') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
 
-                @else
+            @else
 
-                <a href="{{ route('login') }}">Bejelentkezés</a>
-                @if (Route::has('register'))
-                <a href="{{ route('register') }}">Regisztráció</a>
-                <a href="{{ url('/') }}">Kezdőlap</a>
-                <a href="{{ url('/ad') }}">Hirdetések</a>
-                <a href="{{ url('/faq') }}">GYIK</a>
-                <a href="{{ url('/contact_us') }}">Kapcsolat</a>
-                @endif
-                @endauth
-            </div>
+            <a href="{{ route('login') }}">Bejelentkezés</a>
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}">Regisztráció</a>
+            <a href="{{ url('/') }}">Kezdőlap</a>
+            <a href="{{ url('/ad') }}">Hirdetések</a>
+            <a href="{{ url('/faq') }}">GYIK</a>
+            <a href="{{ url('/contact_us') }}">Kapcsolat</a>
             @endif
+            @endauth
         </div>
+        @endif
+    </div>
 
 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
 
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
-        </script>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 
     </div>
 </body>

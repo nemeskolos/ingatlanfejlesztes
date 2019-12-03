@@ -164,7 +164,7 @@
 
         @foreach ($advertisement as $advertisementValue)
 
-        <div class="col">
+        <div class="col-2">
 
             <div class="card" style="width: 18rem; ">
                 @if (($advertisementValue->rooms == 2 && $advertisementValue->price >= 12500000))
@@ -182,21 +182,21 @@
 
 
                             <div class="card" style="width: 18rem;">
+
                                 <div class="card-body">
-                                    <div class="card-body">
-                                     
-                                            <a href="/delete/{{ $advertisementValue->id }}" class="card-link">Törlés</a>
 
-                                            <p></p>
+                                    <a href="/delete/{{ $advertisementValue->id }}" class="btn btn-dark">Törlés</a>
 
-                                            <p class="card-text">Ár(HUF): {{$advertisementValue->price}}</p>
-                                            <p class="card-text">Város: {{$advertisementValue->city}}</p>
-                                            <p class="card-text">Megye: {{$advertisementValue->county}}</p>
-                                            <p class="card-text">Szobák száma: {{$advertisementValue->rooms}}</p>
-                                       
-                                    </div>
+                                    <p></p>
+
+                                    <p class="card-text">Ár(HUF): {{$advertisementValue->price}}</p>
+                                    <p class="card-text">Város: {{$advertisementValue->city}}</p>
+                                    <p class="card-text">Megye: {{$advertisementValue->county}}</p>
+                                    <p class="card-text">Szobák száma: {{$advertisementValue->rooms}}</p>
+
                                 </div>
                             </div>
+
 
 
             </div>
