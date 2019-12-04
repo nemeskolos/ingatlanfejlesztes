@@ -174,7 +174,7 @@
 
     @foreach ($advertisement as $advertisementValue)
 
-    <div class="col-2">
+    <div class="col">
 
       <div class="card" style="width: 18rem; ">
         @if (($advertisementValue->rooms == 2 && $advertisementValue->price >= 12500000))

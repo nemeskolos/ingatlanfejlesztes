@@ -186,7 +186,7 @@
                 Hirdetésedet rögzítettük. Munkatársaink ellenőrzik a feltöltött adatokat<br>
                 és jóváhagyás után megjelenik az oldalon.</p>
             <hr>
-            <p class="mb-0">Ezt követően bármikor szerkesztheted a hirdetés adatait.</p>
+            
         </div>
         <a href="home" type="button" class="btn btn-dark btn-lg btn-block">Vissza a profilra</a>
     </div>
