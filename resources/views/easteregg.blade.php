@@ -38,7 +38,7 @@
     }
 
     .title {
-      display:inline;
+      display: inline;
       --color: #b3b3b3;
       --speed: 0.1;
       text-transform: uppercase;
@@ -103,7 +103,7 @@
       position: absolute;
       background-position: bottom;
       bottom: 49%;
-      background-image: url('http://hirdetes2019.tk/uni.png');
+      background-image: url('http://127.0.0.1:8000/uni.png');
       background-repeat: no-repeat;
       left: 50%;
       animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
@@ -114,7 +114,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/dome.png');
+      background-image: url('http://127.0.0.1:8000/dome.png');
       background-repeat: no-repeat;
       bottom: 49%;
       left: 50%;
@@ -138,7 +138,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/tik.png');
+      background-image: url('http://127.0.0.1:8000/tik.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -150,7 +150,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/tram1.png');
+      background-image: url('http://127.0.0.1:8000/tram1.png');
       background-repeat: no-repeat;
       bottom: 49%;
       left: 50%;
@@ -162,7 +162,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/troli.png');
+      background-image: url('http://127.0.0.1:8000/troli.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -174,7 +174,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/museum.png');
+      background-image: url('http://127.0.0.1:8000/museum.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -186,7 +186,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/theatre.png');
+      background-image: url('http://127.0.0.1:8000/theatre.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -198,7 +198,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/statue.png');
+      background-image: url('http://127.0.0.1:8000/statue.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -210,29 +210,31 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/pick.png');
+      background-image: url('http://127.0.0.1:8000/pick.png');
       background-repeat: no-repeat;
       bottom: 80%;
       left: 50%;
       animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
     }
+
     .mountain10 {
       height: 100%;
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/pick.png');
+      background-image: url('http://127.0.0.1:8000/pick.png');
       background-repeat: no-repeat;
       bottom: 70%;
       left: 50%;
       animation: backdrop calc(var(--speed) * 1s) calc(var(--delay) * -1s) infinite linear both;
     }
+
     .mountain11 {
       height: 100%;
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/paprika.png');
+      background-image: url('http://127.0.0.1:8000/paprika.png');
       background-repeat: no-repeat;
       bottom: 75%;
       left: 50%;
@@ -244,7 +246,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/paprika.png');
+      background-image: url('http://127.0.0.1:8000/paprika.png');
       background-repeat: no-repeat;
       bottom: 85%;
       left: 50%;
@@ -256,7 +258,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/reok.png');
+      background-image: url('http://127.0.0.1:8000/reok.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -268,7 +270,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/townhall.png');
+      background-image: url('http://127.0.0.1:8000/townhall.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -280,7 +282,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/synagoge.png');
+      background-image: url('http://127.0.0.1:8000/synagoge.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -293,7 +295,7 @@
       width: 100%;
       position: absolute;
       background-position: bottom;
-      background-image: url('http://hirdetes2019.tk/railwaystation.png');
+      background-image: url('http://127.0.0.1:8000/railwaystation.png');
       background-repeat: no-repeat;
       bottom: 48%;
       left: 50%;
@@ -776,17 +778,17 @@
     <div class="mountain6" style="--lightness: 5; --height: 42; --width: 21; --speed: 26; --distance: 120; --delay: 16;"></div>
     <div class="mountain7" style="--lightness: 5; --height: 42; --width: 21; --speed: 21; --distance: 120; --delay: 22;"></div>
     <div class="mountain8" style="--lightness: 5; --height: 42; --width: 21; --speed: 18; --distance: 120; --delay: 25;"></div>
-  <!--  <div class="mountain9" style="--lightness: 5; --height: 42; --width: 21; --speed: 9; --distance: 120; --delay: 10;"></div>
+    <!--  <div class="mountain9" style="--lightness: 5; --height: 42; --width: 21; --speed: 9; --distance: 120; --delay: 10;"></div>
     <div class="mountain10" style="--lightness: 5; --height: 42; --width: 21; --speed: 7; --distance: 120; --delay: 9;"></div>
     <div class="mountain11" style="--lightness: 5; --height: 42; --width: 21; --speed: 7; --distance: 120; --delay: 20;"></div>
     <div class="mountain12" style="--lightness: 5; --height: 42; --width: 21; --speed: 7; --distance: 120; --delay: 5;"></div>
   -->
-  <div class="mountain13" style="--lightness: 5; --height: 42; --width: 21; --speed: 26; --distance: 120; --delay: 27;"></div>
-  <div class="mountain14" style="--lightness: 5; --height: 42; --width: 21; --speed: 27; --distance: 120; --delay: 23;"></div>
-  <div class="mountain15" style="--lightness: 5; --height: 42; --width: 21; --speed: 29; --distance: 120; --delay: 17;"></div>
-  <div class="mountain16" style="--lightness: 5; --height: 42; --width: 21; --speed:31; --distance: 120; --delay: 4;"></div>
+    <div class="mountain13" style="--lightness: 5; --height: 42; --width: 21; --speed: 26; --distance: 120; --delay: 27;"></div>
+    <div class="mountain14" style="--lightness: 5; --height: 42; --width: 21; --speed: 27; --distance: 120; --delay: 23;"></div>
+    <div class="mountain15" style="--lightness: 5; --height: 42; --width: 21; --speed: 29; --distance: 120; --delay: 17;"></div>
+    <div class="mountain16" style="--lightness: 5; --height: 42; --width: 21; --speed:31; --distance: 120; --delay: 4;"></div>
 
-  
+
 
   </div>
   <div class="truck">
@@ -798,7 +800,7 @@
             ​<picture>
               <div class="head">
                 <source srcset="..." type="image">
-                <img src="http://hirdetes2019.tk/kolos.png" class="mh-100" style="width: 50px; height: 50px;" alt="...">
+                <img src="http://127.0.0.1:8000/kolos.png" class="mh-100" style="width: 50px; height: 50px;" alt="...">
               </div>
             </picture>
           </div>
