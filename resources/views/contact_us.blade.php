@@ -188,7 +188,7 @@
                             <div class="column">
                                 <div class="card" style="width: 16rem; height: 13rem;">
                                     <div style="width:100%; text-align:center">
-                                        <img src="http://hirdetes2019.tk/contactus.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                        <img src="http://127.0.0.1:8000/contactus.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="text-dark">Ügyintéző</h5>
@@ -200,7 +200,7 @@
                             <div class="column">
                                 <div class="card" style="width: 16rem; height: 13rem;">
                                     <div style="width:100%; text-align:center">
-                                        <img src="http://hirdetes2019.tk/contactphone.jpg " class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                        <img src="http://127.0.0.1:8000/contactphone.jpg " class="card-img-top:center" alt="..." style="max-width: 8rem;">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="text-dark">Telefon</h5>
@@ -212,7 +212,7 @@
                             <div class="column">
                                 <div class="card" style="width: 16rem; height: 13rem;">
                                     <div style="width:100%; text-align:center">
-                                        <img src="http://hirdetes2019.tk/contactemail.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                        <img src="http://127.0.0.1:8000/contactemail.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="text-dark">E-mail</h5>
@@ -224,7 +224,7 @@
                             <div class="column">
                                 <div class="card" style="width: 16rem; height: 13rem;">
                                     <div style="width:100%; text-align:center">
-                                        <img src="http://hirdetes2019.tk/contactskype.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
+                                        <img src="http://127.0.0.1:8000/contactskype.jpg" class="card-img-top:center" alt="..." style="max-width: 8rem;">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="text-dark">Skype</h5>

@@ -178,56 +178,6 @@
     <h1>Ingatlanközvetítés</h1>
     <p>Eladás, bérlés, keresés, hirdetés <span>minden</span> egy helyen!</p>
   
-  <div class="jumbotron text img" style="margin-bottom:0">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="text-body">
-        <h1 class="display-4">Gyakran ismételt kérdések</h1>
-        <p class="title">
-
-
-          <li>Hogyan adhatok fel hírdetést?</li>
-          <p></p>
-          <ul>
-            1.Regisztráció
-            2.Belépés
-            3.Profil hirdetés feladása menüpont
-            4.Töltsd ki az adatokat, és kattints a feladás gombra.
-          </ul>
-          </li>
-
-          <li>Hány hirdetést adhatok fel?</li>
-          <p></p>
-          <ul>
-            Bármennyit.
-          </ul>
-          </li>
-
-          <li>Mikor jelenik meg a hirdetésem?</li>
-          <p></p>
-          <ul>
-            Munkatársaink ellenőrzik a feltöltött adatokat, majd pillanatokon belül megjelenik oldalunkon.
-          </ul>
-          </li>
-
-          <li>Meddig látható a hirdetésem?</li>
-          <p></p>
-          <ul>
-            A hirdetést fent tartjuk az oldalon, amíg nem törlöd.
-          </ul>
-          </li>
-
-          <li>Hogyan törölhetem a hirdetésem?</li>
-          <p></p>
-          <ul>
-            1. Jelentkezz be
-            2. Profil hirdetések törlése menüpont
-            3. A kiválasztott hirdetésnél kattints a törlés gombra.
-          </ul>
-          </li>
-        </p>
-      </div>
-    </div>
-  </div>
  
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
