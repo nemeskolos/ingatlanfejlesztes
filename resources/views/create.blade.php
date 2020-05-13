@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Profil</title>
+    <title>Hirdetések kezelése</title>
 
     <!-- Fonts -->
     <!-- Fonts -->
@@ -41,12 +41,19 @@
         }
 
         .content {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
             padding: 20px;
+        }
+
+        .jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: #495057;
+            border-radius: .3rem;
         }
 
         #myBtn {
@@ -180,48 +187,58 @@
 
         <div class="jumbotron text-center img" style="margin-bottom:0">
 
-          
-<title>Profil</title>
+            <!--ide jön a kód-->
 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="card">
-                <div class="card-header">
-                <div class="text-dark"  >
-                Profil
-                </div>
-            </div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+            <body>
+                <div class="container">
+                    @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
                     @endif
-                <div class="text-dark"  >
-                Üdvözöljük!
+
+                    @if(session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                    @endif
+
+                    <h3 class="jumbotron">Képfeltöltés</h3>
+                    <form method="post" action="{{url('form')}}" enctype="multipart/form-data">
+                        {{csrf_field()}}
+                        <p type="text" class="form-controll offset-md-4">Töltsön fel egy képet a házról!(MAX 2MB)</p>
+                        <div class="input-group control-group increment">
+                            <input type="file" name="filename[]" class="form-control">
+                            <div class="input-group-btn">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-dark" style="margin-top:10px">Mehet</button>
+
+                    </form>
                 </div>
-                    
-                    <p></p>
-                    <a href="advadd" class="btn btn-dark" >Hirdetés feladás</a>
-                    <p></p>
-                    <a href="advdel" class="btn btn-dark" >Hirdetések törlés</a>
-                    <p></p>
-                    <a href="create" class="btn btn-dark" >Képfeltöltés</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
+                <script type="text/javascript">
+                    $(document).ready(function() {
 
+                        $(".btn-success").click(function() {
+                            var html = $(".clone").html();
+                            $(".increment").after(html);
+                        });
+
+                        $("body").on("click", ".btn-danger", function() {
+                            $(this).parents(".control-group").remove();
+                        });
+
+                    });
+                </script>
 
         </div>
 

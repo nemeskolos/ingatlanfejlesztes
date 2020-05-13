@@ -40,6 +40,8 @@ Route::get('/advadd', function () {
     return view('advadd');
 })->name('advadd');
 
+Route::get('advadd','FormController@create');
+Route::post('advadd','FormController@store');
 Route::post('/advadd', 'AdvertisementController@create');
 
 Route::get('/contact_us', function () {
@@ -91,6 +93,14 @@ Route::get('/searchcontent', function () {
     //dd($advertisement);
     return view('ad', ['advertisement' => $posts]);
 })->name('searchcontent');
+
+Route::get('/create', function () {
+    
+    return view('create');
+})->name('create');
+
+Route::get('form','FormController@create');
+Route::post('form','FormController@store');
 
 Auth::routes();
 

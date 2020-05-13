@@ -104,9 +104,9 @@
 
     .m-b-md {
       margin-bottom: 30px;
-    }
+    
 
-      {
+      
       font-family: 'Lato', sans-serif;
     }
 
@@ -175,8 +175,13 @@
     @foreach ($advertisement as $advertisementValue)
 
     <div class="col">
-
       <div class="card" style="width: 18rem; ">
+        @if (($advertisementValue->id == 1 ))
+        <img src="http://127.0.0.1:8000/images/gyorzamoly.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
+        @elseif(($advertisementValue->id == 2))
+        <img src="http://127.0.0.1:8000/images/gyorzamoly.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
+         
+        @else
         @if (($advertisementValue->rooms == 2 && $advertisementValue->price >= 12500000))
         <img src="http://127.0.0.1:8000/asd.jpeg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
         @elseif(($advertisementValue->rooms == 2 && $advertisementValue->price < 12500000)) <img src="http://127.0.0.1:8000/asd2cheap.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
@@ -189,10 +194,7 @@
               @else
               <img src="http://127.0.0.1:8000/asdbig.jpg" class="card-img-top" alt="..." style="width: 18rem; height: 10rem; ">
               @endif
-
-
-
-
+              @endif
 
               <div class="card-body">
 
@@ -204,11 +206,6 @@
       </div>
     </div>
     @endforeach
-
-
-
-
-
 
 
 

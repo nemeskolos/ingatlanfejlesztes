@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Form;
 use Advertisement;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -33,12 +34,32 @@ class AdvertisementController extends Controller
         $county = $request->input('county');
         $user_id = $request->user()->id;
 
+
         $datas = array('price' => $price, 'rooms' => $rooms, 'city' => $city, 'county' => $county, 'user_id' => $user_id);
 
         DB::table('advertisement')->insert([$datas]);
 
         return  view('sucadvmsg');
     }
+
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+
 
     public function store(Request $request)
     {
@@ -71,7 +92,7 @@ class AdvertisementController extends Controller
     {
 
         DB::table('advertisement')->where('id', $id)->delete();
-        
+
         return view('sucdelmsg');
     }
 

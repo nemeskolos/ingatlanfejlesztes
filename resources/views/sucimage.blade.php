@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+<title>Sikeres</title>
 <head>
 
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Profil</title>
+    <title>Ingatlan közvetítés</title>
 
     <!-- Fonts -->
     <!-- Fonts -->
@@ -41,7 +41,7 @@
         }
 
         .content {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
@@ -180,51 +180,16 @@
 
         <div class="jumbotron text-center img" style="margin-bottom:0">
 
-          
-<title>Profil</title>
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="card">
-                <div class="card-header">
-                <div class="text-dark"  >
-                Profil
-                </div>
-            </div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                <div class="text-dark"  >
-                Üdvözöljük!
-                </div>
-                    
-                    <p></p>
-                    <a href="advadd" class="btn btn-dark" >Hirdetés feladás</a>
-                    <p></p>
-                    <a href="advdel" class="btn btn-dark" >Hirdetések törlés</a>
-                    <p></p>
-                    <a href="create" class="btn btn-dark" >Képfeltöltés</a>
-                </div>
-            </div>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Sikeres képfeltöltés</h4>
+            <p>Köszönjük, hogy oldalunkat választottad ingatlan eladásod közvetítéséhez!<br>
+                Feltöltésed rögzítettük. Munkatársaink ellenőrzik a feltöltött adatokat<br>
+                és jóváhagyás után megjelenik az oldalon.</p>
+            <hr>
+            
         </div>
+        <a href="home" type="button" class="btn btn-dark btn-lg btn-block">Vissza a profilra</a>
     </div>
-</div>
-
-
-
-
-        </div>
-
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             @if (Route::has('login'))

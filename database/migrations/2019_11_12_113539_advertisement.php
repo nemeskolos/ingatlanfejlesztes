@@ -17,7 +17,7 @@ class Advertisement extends Migration
             $table->bigIncrements('id');
             $table->integer('price');
             $table->integer('rooms');
-            $table->string('city');
+            $table->string('city') ; 
             $table->string('county');
             $table->integer('user_id');
             $table->timestamps();
